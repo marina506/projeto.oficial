@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f6ff;
+  color: #0d1b3d;
+}
+
+/* HEADER */
+header {
+  background-color: #2d3e6f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+}
+
+.logo img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  background-color: #2F4472;
+  color: #0d1b3d;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav li.active {
+  background-color: #f4f6ff;
+}
+
+nav li:hover {
+  background-color: #D3E1FF;
+}
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #d7e0f9;
+  padding: 3rem 0;
+}
+
+.card {
+  background-color: #0d1b3d;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #D3E1FF;
+}
+
+.card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2d3e6f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  height: 130px;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dbe7ff;
+  margin: 0;
+  padding: 0;
+  color: #0b1d40;
+}
+
+header {
+  background-color: #0b1d40;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.ativo {
+  background-color: #5d7bf2;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.servicos-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #122857;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #0b1d40;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #1b3a6a;
+}
+
+.hidden {
+  display: none;
+}
+
+#adicionais-info {
+  margin-top: 15px;
+  background-color: #cdd9ff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 15px auto;
+  text-align: left;
+}
+
+#adicionais-info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-weight: bold;
+}

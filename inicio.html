@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leh Nail Designer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f6ff;
+      color: #0d1b3d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #2d3e6f;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 2rem;
+    }
+
+    .logo img {
+      height: 70px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #D3E1FF;
+      color: #0d1b3d;
+    }
+
+    nav a.ativo {
+      background-color: #f4f6ff;
+      color: #0d1b3d;
+    }
+
+    /* BANNER */
+    .banner img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #d7e0f9;
+      padding: 3rem 0;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #0d1b3d;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 220px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #2d3e6f;
+    }
+
+    .card .icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    /* SERVIÇOS */
+    .servicos-container {
+      text-align: center;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .servicos-container h2 {
+      margin-bottom: 2rem;
+      color: #2d3e6f;
+    }
+
+    .servicos-grid {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .servico-card {
+      background-color: #122857;
+      color: white;
+      border-radius: 10px;
+      width: 200px;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .servico-card:hover {
+      transform: scale(1.05);
+    }
+
+    .servico-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background-color: #0d1b3d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2d3e6f;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #adicionais-info {
+      margin-top: 15px;
+      background-color: #cdd9ff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 350px;
+      margin: 15px auto;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #adicionais-info p {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-weight: bold;
+      border-bottom: 1px solid #a0aec0;
+      padding-bottom: 5px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #2d3e6f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer-logo img {
+      height: 130px;
+    }
+
+    .footer-info p {
+      margin: 0.3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    /* RESPONSIVO */
+    @media (min-width: 768px) {
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo-removebg-preview.png"Logo Leh Nail Designer">
+    </div>
+    <nav>
+      <a href="inicio.html" class="ativo">Início</a> 
+      <a href="servicosevalores.html">Serviços e valores</a>
+      <a href="agendamento.html">Agendamento</a>
+      <a href="sobre.html">Sobre nós</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="https://via.placeholder.com/1200x250/2d3e6f/ffffff?text=Banner+Leh+Nail+Designer" alt="Unhas decoradas">
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <span class="icon">💅</span>
+      <h3>Nail Designer</h3>
+    </div>
+    <div class="card">
+      <span class="icon">💎</span>
+      <h3>Evolução dos trabalhos</h3>
+    </div>
+    <div class="card">
+      <span class="icon">🔥</span>
+      <h3>Tendências</h3>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo-removebg-preview.png" alt="Logo Leh Nail Designer">
+      </div>
+
+      <div class="footer-info">
+        <p><i class="fa-solid fa-phone"></i> (84) 99414-4853</p>
+        <p><i class="fa-brands fa-instagram"></i> lehh.nails</p>
+        <p><i class="fas fa-map-marker-alt"></i> R. das Prímulas, Nº 27 - Redinha</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript para funcionalidades básicas
+    document.addEventListener('DOMContentLoaded', function() {
+      // Adicionar funcionalidade aos cards da página inicial
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          window.location.href = 'servicosevalores.html';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
